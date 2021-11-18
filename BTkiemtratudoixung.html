@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiemtratudoixung</title>
+</head>
+<body>
+<script>
+    let string = prompt("Nhập vào chuỗi: ")
+    let arr = string.split("");
+    let first = 0;
+    let last = arr.length-1;
+    if (isPalindrome(first,last)){
+        alert("Chuỗi nhập vào đối xứng")
+    }else{
+        alert("Chuỗi nhập vào không đối xứng")
+    }
+    function  isPalindrome(start,end){
+        if (start <= end){
+            if ((arr[start]===arr[end])){
+                isPalindrome(start+1,end-1);
+            }else{
+                return false;
+            }
+        }
+        return true;
+    }
+</script>
+</body>
+</html>
