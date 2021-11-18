@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timgiatrinhonhatcuamang</title>
+</head>
+<body>
+<script>
+
+    let arr1 = [3,5,1,8,-3,7,8];
+    let arr2 = [7,12,6,9,20,56,89];
+    let arr3 = [];
+    let arr4 = [0,0,0,0,0,0];
+
+    let min1 = findMinArray(arr1);
+    checkMin(min1);
+    let min2 = findMinArray(arr2);
+    checkMin(min2);
+    let min3 = findMinArray(arr3);
+    checkMin(min3);
+    let min4 = findMinArray(arr4);
+    checkMin(min4);
+
+    function findMinArray(arr){
+        if (arr.length === 0){
+            return -1;
+        }
+        let Min = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+            if (Min > arr[i]){
+                Min = arr[i];
+            }
+        }
+        return Min;
+    }
+    function checkMin(min){
+        if (min !==-1){
+            console.log(min);
+        }else {
+            console.log("Mảng rỗng!");
+        }
+    }
+
+
+
+
+</script>
+</body>
+</html>
