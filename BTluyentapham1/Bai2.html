@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai2</title>
+</head>
+<body>
+<p>Nhập vào một số a:</p>
+<input type="text" id ="input" oninput="inputChange(+this.value)">
+<p>Số a tăng lên 1 là: <span id="display"></span></p>
+<script>
+        function inputChange(num){
+        document.getElementById("display").innerText = num+1;
+    }
+
+</script>
+</body>
+</html>

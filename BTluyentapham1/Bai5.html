@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai5</title>
+</head>
+<body>
+
+<script>
+    let arr1 = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+    let arr2 = ["Ursa Minor","Tarurus","Cygnus","Lyra", "Aquila", "Ursa Major", "Leo"];
+
+    let input = prompt("Nhập vào tên ngôi sao: ");
+    findStart(input);
+
+    function findStart(startName){
+        let check = false;
+        for (let i = 0; i < arr1.length; i++) {
+            if (startName === arr1[i]){
+                alert("Chòm sao: "+arr2[i]);
+                check = true
+            }
+        }
+        if (!check){
+            alert("Không có tên ngôi sao trong mảng!");
+        }
+    }
+
+
+</script>
+
+</body>
+</html>
