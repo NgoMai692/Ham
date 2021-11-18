@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChuyendoiFeetsvaMeters</title>
+</head>
+<body>
+<p><lable>Nhập Feets:<input type="text" oninput="changeMeters(this.value)"></lable></p>
+<p >Đổi sang met là:<span id="display1"></span></p>
+<p><lable>Nhập Meters:<input type="text" oninput="changeFeet(this.value)"></lable></p>
+<p >Đổi sang Feet là:<span id="display2"></span></p>
+<script>
+
+    function changeMeters(value){
+        document.getElementById("display1").innerText =  (value*0.305.toFixed(3));
+    }
+    function changeFeet(value){
+        document.getElementById("display2").innerText = (value*3.279.toFixed(3));
+    }
+</script>
+</body>
+</html>
