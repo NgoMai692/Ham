@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai9</title>
+</head>
+<body>
+<script>
+    let string = prompt("Nhập vào một chuỗi: ");
+    let text = prompt("Nhập vào một kí tự: ");
+
+    alert(checkTextInString(string,text));
+
+    function checkTextInString(str,tex){
+        let array = str.split("");
+        let count = 0;
+        for (let i = 0; i < array.length; i++) {
+            if (array[i]===tex){
+                count++;
+            }
+        }
+        if (count===0){
+            return -1;
+        }else {
+            return count;
+        }
+    }
+
+</script>
+</body>
+</html>

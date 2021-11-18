@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai2</title>
+</head>
+<body>
+
+<script>
+    let bankinh = +prompt("Nhập bán kính hình tròn: ");
+
+    alert("Diện tích hình tròn bán kính "+bankinh + " là: " + tinhDienTichHinhTron(bankinh).toFixed(3));
+    alert("Chu vi hình tròn bán kính "+bankinh+" là: "+tinhChuViHinhTron(bankinh).toFixed(3));
+
+    function tinhDienTichHinhTron(r){
+        return 3.14*r*r;
+    }
+    function tinhChuViHinhTron(r){
+        return 3.14*r*2;
+    }
+</script>
+</body>
+</html>

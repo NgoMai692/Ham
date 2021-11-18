@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai3</title>
+</head>
+<body>
+<script>
+    let input = +prompt("Nhập vào 1 số: ");
+
+    if (input >= 0){
+        alert("Giai thừa của số "+input+" là: "+tinhGiaiThua(input));
+
+    }else {
+        alert("Không tính giai thừa cho số âm!")
+    }
+
+    function tinhGiaiThua(num){
+        if (num===1 || num===0){
+            return 1;
+        }else{
+            return num*tinhGiaiThua(num-1);
+        }
+    }
+</script>
+
+</body>
+</html>

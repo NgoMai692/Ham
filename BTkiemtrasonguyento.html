@@ -19,24 +19,17 @@
             document.getElementById("display").innerText = ("Số "+number+" không phải là số nguyên tố");
         }
     }
-
     function isPrime(num){
-        if (num <= 0){
+        if (num < 2){
             return false;
         }else {
-            let count = 0;
-            for (let i = 1; i <= num ; i++) {
+            for (let i = 2; i <= Math.sqrt(num); i++) {
                 if (num %i ===0) {
-                    count++;
+                    return false;
                 }
             }
-            if (count === 2) {
-                return true;
-            }else {
-                return false;
-            }
+            return true;
         }
-
     }
 </script>
 </body>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai7</title>
+</head>
+<body>
+<script>
+    let number1 = +prompt("Nhập vào số thứ nhất: ");
+    let number2 = +prompt("Nhập vào số thứ hai: ");
+    alert("Đổi vị trí hai số: " + changePosition(number1,number2) );
+
+    function changePosition(num1,num2){
+        let temp = num1;
+        num1 = num2;
+        num2 = temp;
+        return [num1,num2];
+    }
+</script>
+</body>
+</html>

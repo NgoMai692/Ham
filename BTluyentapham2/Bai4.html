@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai4</title>
+</head>
+<body>
+<script>
+    let input = prompt("Nhập một kí tự:");
+
+    if(isNumber(input)){
+        alert("Kí tự nhập vào là số")
+    }else {
+        alert("Kí tự nhập vào không phải là số")
+    }
+
+    function isNumber(value){
+        if (value < 0 || value >= 0){
+            return true;
+        }else {
+            return false;
+        }
+    }
+</script>
+
+</body>
+</html>
