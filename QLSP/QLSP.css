@@ -1,0 +1,32 @@
+
+table{
+    width: 600px;
+}
+#name {
+    width: 50%;
+}
+
+button {
+    width: 70px;
+    border-radius: 5px;
+}
+
+tr:nth-child(even){
+    background-color: #f6f3ec;
+}
+td{
+    padding: 5px;
+}
+table,tr,td{
+    border-collapse: collapse;
+
+}
+#title{
+    background-color: #f6f3ec;
+    padding:  20px;
+    width: 50%;
+    border-radius: 30px;
+}
+input{
+    border-radius: 10px;
+}
